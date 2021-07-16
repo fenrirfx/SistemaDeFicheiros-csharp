@@ -80,26 +80,6 @@ namespace FileSystem
                 Console.Write("Deseja sair(s/n)? ");
                 sair = char.Parse(Console.ReadLine());
             }
-            /*string sourcePath = @"\Nova Pasta";
-            string filePath = @"\Nova Pasta\Sourcefile.txt";
-            string finalPath = @"\Nova Pasta\out\summary.txt";
-
-            Directory.CreateDirectory(sourcePath + @"\out");
-
-            string[] lines = File.ReadAllLines(filePath);
-
-            using (StreamWriter wr = File.AppendText(finalPath))
-            {
-                foreach (string word in lines)
-                {
-                    string[] vect = word.Split('.');
-                    string a = vect[0];
-                    string b = vect[1];
-                    string c = vect[2];
-                    double d = double.Parse(b) * double.Parse(c);
-                    wr.WriteLine(a + " " + d);
-                }
-            }*/
         }
     }
 }
